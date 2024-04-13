@@ -129,6 +129,34 @@
       "PackagePath": "staticwebassets\\app\\demo-webapi\\src\\app\\user\\userService.ts"
     },
     {
+      "Id": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\app\\demo-webapi\\src\\assets\\0bf2d365-4ac4-484c-9600-402cf1e74066_JQuery.jpg",
+      "PackagePath": "staticwebassets\\app\\demo-webapi\\src\\assets\\0bf2d365-4ac4-484c-9600-402cf1e74066_JQuery.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\app\\demo-webapi\\src\\assets\\549c9e31-bf0e-43f3-b695-bf68e29838f8_HTML.jpg",
+      "PackagePath": "staticwebassets\\app\\demo-webapi\\src\\assets\\549c9e31-bf0e-43f3-b695-bf68e29838f8_HTML.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\app\\demo-webapi\\src\\assets\\9bf2b572-1185-41af-ae3a-e5e6eecf3f69_JQuery.jpg",
+      "PackagePath": "staticwebassets\\app\\demo-webapi\\src\\assets\\9bf2b572-1185-41af-ae3a-e5e6eecf3f69_JQuery.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\app\\demo-webapi\\src\\assets\\a310dee1-36b8-4344-8d2d-fd3cbfcf1b39_JQuery.jpg",
+      "PackagePath": "staticwebassets\\app\\demo-webapi\\src\\assets\\a310dee1-36b8-4344-8d2d-fd3cbfcf1b39_JQuery.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\app\\demo-webapi\\src\\assets\\a96ffcb4-f6e9-4791-90ed-e0c4225f31d6_JQuery.jpg",
+      "PackagePath": "staticwebassets\\app\\demo-webapi\\src\\assets\\a96ffcb4-f6e9-4791-90ed-e0c4225f31d6_JQuery.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\app\\demo-webapi\\src\\assets\\ace2e4c4-57c8-4e10-af1e-3a319e844df7_JQuery.jpg",
+      "PackagePath": "staticwebassets\\app\\demo-webapi\\src\\assets\\ace2e4c4-57c8-4e10-af1e-3a319e844df7_JQuery.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\app\\demo-webapi\\src\\assets\\f223095d-5393-4715-9007-3168632acfb7_prod_CSS.jpg",
+      "PackagePath": "staticwebassets\\app\\demo-webapi\\src\\assets\\f223095d-5393-4715-9007-3168632acfb7_prod_CSS.jpg"
+    },
+    {
       "Id": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\app\\demo-webapi\\src\\browserslist",
       "PackagePath": "staticwebassets\\app\\demo-webapi\\src"
     },
