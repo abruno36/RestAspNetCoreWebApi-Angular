@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KK4GR3gjOldTobDWrueo9xHUG+/eVXKuyQTtCE166oo=",
+  "Hash": "RiLsfDsuQg86l4zdh7DbzYSuOk6sMQNIMRbCsgwdfbc=",
   "Source": "DevIO.Api",
   "BasePath": "_content/DevIO.Api",
   "Mode": "Default",
@@ -1037,6 +1037,23 @@
       "OriginalItemSpec": "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\50eb2fc4-3b08-4b81-abd8-a515fce37b4b_prod_JQuery.jpg",
+      "SourceId": "DevIO.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\",
+      "BasePath": "_content/DevIO.Api",
+      "RelativePath": "50eb2fc4-3b08-4b81-abd8-a515fce37b4b_prod_JQuery.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\50eb2fc4-3b08-4b81-abd8-a515fce37b4b_prod_JQuery.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\app\\.vscode\\launch.json",
       "SourceId": "DevIO.Api",
       "SourceType": "Discovered",
@@ -1953,6 +1970,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\app\\demo-webapi\\tslint.json"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\d22f9a87-a696-4c65-8cba-97a69f0c38ed_prod_JQuery.jpg",
+      "SourceId": "DevIO.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\",
+      "BasePath": "_content/DevIO.Api",
+      "RelativePath": "d22f9a87-a696-4c65-8cba-97a69f0c38ed_prod_JQuery.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\d22f9a87-a696-4c65-8cba-97a69f0c38ed_prod_JQuery.jpg"
     }
   ]
 }

@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\50eb2fc4-3b08-4b81-abd8-a515fce37b4b_prod_JQuery.jpg",
+      "PackagePath": "staticwebassets\\50eb2fc4-3b08-4b81-abd8-a515fce37b4b_prod_JQuery.jpg"
+    },
+    {
       "Id": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\app\\.vscode\\launch.json",
       "PackagePath": "staticwebassets\\app\\.vscode\\launch.json"
     },
@@ -215,6 +219,10 @@
     {
       "Id": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\app\\demo-webapi\\tslint.json",
       "PackagePath": "staticwebassets\\app\\demo-webapi\\tslint.json"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\d22f9a87-a696-4c65-8cba-97a69f0c38ed_prod_JQuery.jpg",
+      "PackagePath": "staticwebassets\\d22f9a87-a696-4c65-8cba-97a69f0c38ed_prod_JQuery.jpg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.DevIO.Api.Microsoft.AspNetCore.StaticWebAssets.props",

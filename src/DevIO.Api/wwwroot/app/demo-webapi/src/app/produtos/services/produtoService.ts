@@ -39,6 +39,7 @@ export class ProdutoService extends BaseService {
     }
 
     obterFornecedores(): Observable<Fornecedor[]> {
+        console.log("entrou aqui l42")
         return this.http
             .get<Fornecedor[]>(this.UrlServiceV1 + 'fornecedores', super.ObterAuthHeaderJson())
             .pipe(

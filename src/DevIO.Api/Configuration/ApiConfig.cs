@@ -19,6 +19,7 @@ namespace DevIO.Api.Configuration
                 options.AddPolicy("Development",
                     builder => builder.AllowAnyOrigin()
                         .AllowAnyMethod()
+                        .AllowCredentials()
                         .AllowAnyHeader());
             });
 
