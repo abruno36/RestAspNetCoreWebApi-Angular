@@ -67,3 +67,16 @@ C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\obj\De
 C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\obj\Debug\net6.0\DevIO.Api.genruntimeconfig.cache
 C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\obj\Debug\net6.0\ref\DevIO.Api.dll
 C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\DevIO.Api.staticwebassets.runtime.json
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\obj\Debug\net6.0\DevIO.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\KissLog.dll
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\KissLog.AspNetCore.dll
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\KissLog.CloudListeners.dll
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\KissLog.RestClient.dll
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
