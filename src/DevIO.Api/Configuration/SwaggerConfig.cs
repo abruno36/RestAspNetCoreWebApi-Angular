@@ -15,15 +15,15 @@ namespace DevIO.Api.Configuration
             {
                 c.OperationFilter<SwaggerDefaultValues>();
 
-                //c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-                //{
-                //    Description = "Insira o token JWT desta maneira: Bearer {seu token}",
-                //    Name = "Authorization",
-                //    Scheme = "Bearer",
-                //    BearerFormat = "JWT",
-                //    In = ParameterLocation.Header,
-                //    Type = SecuritySchemeType.ApiKey
-                //});
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Description = "Insira o token JWT desta maneira: Bearer {seu token}",
+                    Name = "Authorization",
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey
+                });
 
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement
                 {
@@ -56,6 +56,8 @@ namespace DevIO.Api.Configuration
                         options.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json", description.GroupName.ToUpperInvariant());
                     }
                 });
+
+
             return app;
         }
     }
