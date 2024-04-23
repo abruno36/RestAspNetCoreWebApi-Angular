@@ -54,9 +54,45 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Asp.Versioning.Mvc": {
+              "target": "Package",
+              "version": "[6.4.1, )"
+            },
+            "Asp.Versioning.Mvc.ApiExplorer": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "AspNetCore.HealthChecks.UI": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "AspNetCore.HealthChecks.UI.Client": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "AspNetCore.HealthChecks.UI.Client.Net6": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "AspNetCore.HealthChecks.UI.SqlServer.Storage": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "Elmah.Io.AspNetCore": {
+              "target": "Package",
+              "version": "[4.1.37, )"
+            },
+            "Elmah.Io.AspNetCore.HealthChecks": {
+              "target": "Package",
+              "version": "[4.1.37, )"
+            },
+            "Elmah.Io.Extensions.Logging": {
+              "target": "Package",
+              "version": "[4.1.28, )"
             },
             "KissLog.AspNetCore": {
               "target": "Package",
@@ -99,6 +135,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.3, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.0, )"
             }
           },
           "imports": [

@@ -1,88 +1,44 @@
-﻿using DevIO.Api.Configuration;
+﻿using Asp.Versioning.ApiExplorer;
+using DevIO.Api.Configuration;
 using DevIO.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Adicionando suporte a Diversos arquivos de configuração por ambiente.
 builder.Configuration
     .SetBasePath(builder.Environment.ContentRootPath)
     .AddJsonFile("appsettings.json", true, true)
     .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", true, true)
     .AddEnvironmentVariables();
 
+// ConfigureServices
+
 builder.Services.AddDbContext<MeuDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
-// Adicionando suporte a User Secrets
-if (builder.Environment.IsProduction())
-{
-    builder.Configuration.AddUserSecrets<Program>();
-}
-
-// *** Configurando serviços no container ***
-
-// Extension Method de configuração do Identity
 builder.Services.AddIdentityConfig(builder.Configuration);
 
-// Extension Method de Authorization (Policies)
-//builder.Services.AddAuthorizationConfig();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-// Extension Method de resolução de DI
+builder.Services.AddApiConfig();
+
+builder.Services.AddSwaggerConfig();
+
+//builder.Services.AddLoggingConfig(builder.Configuration);
+
 builder.Services.ResolveDependencies();
 
-// Extension Method de configuração KissLog
-//builder.Services.RegisterKissLogListeners();
-
-// Adicionando o MVC com suporte ao filtro de auditoria
-builder.Services.AddControllersWithViews(options =>
-{
-    //options.Filters.Add(typeof(AuditoriaFilter));
-});
-
-// Adicionando suporte a componentes Razor (ex: Telas do Identity)
-builder.Services.AddRazorPages();
-
 var app = builder.Build();
+var apiVersionDescriptionProvider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
 
-// *** Configurando o resquest dos serviços no pipeline ***
+// Configure
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseDeveloperExceptionPage();
-    //app.UseMigrationsEndPoint();
-}
-else
-{
-    app.UseExceptionHandler("/erro/500");
-    app.UseStatusCodePagesWithRedirects("/erro/{0}");
-    app.UseHsts();
-}
+app.UseApiConfig(app.Environment);
 
-// Força redirect para HTTPS
-app.UseHttpsRedirection();
+app.UseSwaggerConfig(apiVersionDescriptionProvider);
 
-// Adicionando suporte a arquivos (ex: CSS, JS)
-app.UseStaticFiles();
-
-// Adicionando suporte a rota
-app.UseRouting();
-
-// Autenticacao e autorização (Identity)
-app.UseAuthentication();
-app.UseAuthorization();
-
-// Rota padrão
-app.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
-
-// Mapeando componentes Razor Pages (ex: Identity)
-app.MapRazorPages();
-
-// Adicionando suporte ao KissLog
-//app.RegisterKissLogListeners(builder.Configuration);
+//app.UseLoggingConfiguration();
 
 app.Run();

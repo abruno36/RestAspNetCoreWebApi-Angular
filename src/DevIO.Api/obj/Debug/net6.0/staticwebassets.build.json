@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RiLsfDsuQg86l4zdh7DbzYSuOk6sMQNIMRbCsgwdfbc=",
+  "Hash": "73xZrqzk3MoOWIuUEV4t7HFCHCMWeY7C77w1mV9MYMk=",
   "Source": "DevIO.Api",
   "BasePath": "_content/DevIO.Api",
   "Mode": "Default",
@@ -1054,6 +1054,23 @@
       "OriginalItemSpec": "wwwroot\\50eb2fc4-3b08-4b81-abd8-a515fce37b4b_prod_JQuery.jpg"
     },
     {
+      "Identity": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\acf35840-29b6-4b09-9899-c9a29148ff1d_prod_JQuery.jpg",
+      "SourceId": "DevIO.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\",
+      "BasePath": "_content/DevIO.Api",
+      "RelativePath": "acf35840-29b6-4b09-9899-c9a29148ff1d_prod_JQuery.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\acf35840-29b6-4b09-9899-c9a29148ff1d_prod_JQuery.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\app\\.vscode\\launch.json",
       "SourceId": "DevIO.Api",
       "SourceType": "Discovered",
@@ -1987,6 +2004,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\d22f9a87-a696-4c65-8cba-97a69f0c38ed_prod_JQuery.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\e383b497-8f83-497e-ae21-e39588160496_prod_JQuery.jpg",
+      "SourceId": "DevIO.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Documents\\REST com ASP_NET Core WEBAPI\\6.0\\src\\DevIO.Api\\wwwroot\\",
+      "BasePath": "_content/DevIO.Api",
+      "RelativePath": "e383b497-8f83-497e-ae21-e39588160496_prod_JQuery.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\e383b497-8f83-497e-ae21-e39588160496_prod_JQuery.jpg"
     }
   ]
 }
