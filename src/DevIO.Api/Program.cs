@@ -26,7 +26,7 @@ builder.Services.AddApiConfig();
 
 builder.Services.AddSwaggerConfig();
 
-//builder.Services.AddLoggingConfig(builder.Configuration);
+builder.Services.AddLoggingConfig(builder.Configuration);
 
 builder.Services.ResolveDependencies();
 
@@ -39,6 +39,6 @@ app.UseApiConfig(app.Environment);
 
 app.UseSwaggerConfig(apiVersionDescriptionProvider);
 
-//app.UseLoggingConfiguration();
+app.UseLoggingConfiguration();
 
 app.Run();

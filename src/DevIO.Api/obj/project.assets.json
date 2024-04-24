@@ -69,6 +69,23 @@
           }
         }
       },
+      "AspNetCore.HealthChecks.SqlServer/6.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "3.0.1",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/HealthChecks.SqlServer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/HealthChecks.SqlServer.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "AspNetCore.HealthChecks.UI/6.0.4": {
         "type": "package",
         "dependencies": {
@@ -165,6 +182,19 @@
           "lib/net6.0/HealthChecks.UI.Core.dll": {}
         }
       },
+      "AspNetCore.HealthChecks.UI.InMemory.Storage/6.0.3": {
+        "type": "package",
+        "dependencies": {
+          "AspNetCore.HealthChecks.UI.Core": "6.0.3",
+          "Microsoft.EntityFrameworkCore.InMemory": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/HealthChecks.UI.InMemory.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/HealthChecks.UI.InMemory.Storage.dll": {}
+        }
+      },
       "AspNetCore.HealthChecks.UI.SqlServer.Storage/6.0.4": {
         "type": "package",
         "dependencies": {
@@ -210,6 +240,50 @@
         },
         "runtime": {
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
+      "Azure.Core/1.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
+          "System.Buffers": "4.5.0",
+          "System.Diagnostics.DiagnosticSource": "4.6.0",
+          "System.Memory": "4.5.3",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Text.Json": "4.6.0",
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Azure.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Identity/1.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.6.0",
+          "Microsoft.Identity.Client": "4.22.0",
+          "Microsoft.Identity.Client.Extensions.Msal": "2.16.5",
+          "System.Memory": "4.5.3",
+          "System.Security.Cryptography.ProtectedData": "4.5.0",
+          "System.Text.Json": "4.6.0",
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Azure.Identity.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Identity.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Elmah.Io.AspNetCore/4.1.37": {
@@ -621,6 +695,17 @@
           }
         }
       },
+      "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
@@ -630,11 +715,12 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Microsoft.Data.SqlClient/2.1.4": {
+      "Microsoft.Data.SqlClient/3.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Data.SqlClient.SNI.runtime": "2.1.1",
-          "Microsoft.Identity.Client": "4.21.1",
+          "Azure.Identity": "1.3.0",
+          "Microsoft.Data.SqlClient.SNI.runtime": "3.0.0",
+          "Microsoft.Identity.Client": "4.22.0",
           "Microsoft.IdentityModel.JsonWebTokens": "6.8.0",
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.8.0",
           "Microsoft.Win32.Registry": "4.7.0",
@@ -642,7 +728,8 @@
           "System.Diagnostics.DiagnosticSource": "4.7.0",
           "System.Runtime.Caching": "4.7.0",
           "System.Security.Principal.Windows": "4.7.0",
-          "System.Text.Encoding.CodePages": "4.7.0"
+          "System.Text.Encoding.CodePages": "4.7.0",
+          "System.Text.Encodings.Web": "4.7.2"
         },
         "compile": {
           "ref/netcoreapp3.1/Microsoft.Data.SqlClient.dll": {
@@ -665,7 +752,7 @@
           }
         }
       },
-      "Microsoft.Data.SqlClient.SNI.runtime/2.1.1": {
+      "Microsoft.Data.SqlClient.SNI.runtime/3.0.0": {
         "type": "package",
         "runtimeTargets": {
           "runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll": {
@@ -764,6 +851,22 @@
         },
         "build": {
           "build/net6.0/Microsoft.EntityFrameworkCore.Design.props": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.InMemory/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.EntityFrameworkCore.Relational/6.0.3": {
@@ -1294,15 +1397,32 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Identity.Client/4.21.1": {
+      "Microsoft.Identity.Client/4.22.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {
+          "ref/netcoreapp2.1/Microsoft.Identity.Client.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
           "lib/netcoreapp2.1/Microsoft.Identity.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Identity.Client.Extensions.Msal/2.16.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "4.22.0",
+          "System.Security.Cryptography.ProtectedData": "4.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.dll": {
             "related": ".xml"
           }
         }
@@ -2349,6 +2469,15 @@
           }
         }
       },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
       "System.Reflection/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2718,7 +2847,7 @@
       "System.Security.Cryptography.ProtectedData/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/_._": {
+          "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
             "related": ".xml"
           }
         },
@@ -2927,6 +3056,15 @@
           }
         }
       },
+      "System.Threading.Tasks.Extensions/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
       "System.Windows.Extensions/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -3073,6 +3211,22 @@
         "lib/netcoreapp3.1/Asp.Versioning.Mvc.ApiExplorer.xml"
       ]
     },
+    "AspNetCore.HealthChecks.SqlServer/6.0.2": {
+      "sha512": "Af7ws27DnZZ4bKCiEREm7emSAKEtIiYirEAkI0ixFgK1fwJ99jmMnPC+kU01zfqn3FyCO/gZOUO7WbyVvTPpFg==",
+      "type": "package",
+      "path": "aspnetcore.healthchecks.sqlserver/6.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aspnetcore.healthchecks.sqlserver.6.0.2.nupkg.sha512",
+        "aspnetcore.healthchecks.sqlserver.nuspec",
+        "icon.png",
+        "lib/net6.0/HealthChecks.SqlServer.dll",
+        "lib/net6.0/HealthChecks.SqlServer.xml",
+        "lib/netstandard2.0/HealthChecks.SqlServer.dll",
+        "lib/netstandard2.0/HealthChecks.SqlServer.xml"
+      ]
+    },
     "AspNetCore.HealthChecks.UI/6.0.4": {
       "sha512": "/wrcDR78xSFRbIV5g5tc9ozEYxS8+xSV4WFgYk46uHM5yzt9IaOqKT+i9bW9o7v3qn7e5EpHhnwMnpZZQtn2pQ==",
       "type": "package",
@@ -3140,6 +3294,18 @@
         "lib/net6.0/HealthChecks.UI.Core.dll"
       ]
     },
+    "AspNetCore.HealthChecks.UI.InMemory.Storage/6.0.3": {
+      "sha512": "9/oolCg1p22w+zhvHsynBVqeY7KXynPRLkrKI8V9R8hBx76pOqJpEqKalHZ1gVRAHw4u1tLMzC1YsNF1jG12mQ==",
+      "type": "package",
+      "path": "aspnetcore.healthchecks.ui.inmemory.storage/6.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aspnetcore.healthchecks.ui.inmemory.storage.6.0.3.nupkg.sha512",
+        "aspnetcore.healthchecks.ui.inmemory.storage.nuspec",
+        "lib/net6.0/HealthChecks.UI.InMemory.Storage.dll"
+      ]
+    },
     "AspNetCore.HealthChecks.UI.SqlServer.Storage/6.0.4": {
       "sha512": "rOdrm+iM7AjeAdRoL9ByfqSFSyIhNBPM2Qb+9yNHz7czvTHqKU9EFKUg7+jBWO4GTrhmA20wAQXcuR3o2syoXg==",
       "type": "package",
@@ -3181,6 +3347,40 @@
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "icon.png",
         "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
+    "Azure.Core/1.6.0": {
+      "sha512": "kI4m2NsODPOrxo0OoKjk6B3ADbdovhDQIEmI4039upjjZKRaewVLx/Uz4DfRa/NtnIRZQPUALe1yvdHWAoRt4w==",
+      "type": "package",
+      "path": "azure.core/1.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.core.1.6.0.nupkg.sha512",
+        "azure.core.nuspec",
+        "lib/net461/Azure.Core.dll",
+        "lib/net461/Azure.Core.xml",
+        "lib/netstandard2.0/Azure.Core.dll",
+        "lib/netstandard2.0/Azure.Core.xml",
+        "pkgicon.png"
+      ]
+    },
+    "Azure.Identity/1.3.0": {
+      "sha512": "l1SYfZKOFBuUFG7C2SWHmJcrQQaiXgBdVCycx4vcZQkC6efDVt7mzZ5pfJAFEJDBUq7mjRQ0RPq9ZDGdSswqMg==",
+      "type": "package",
+      "path": "azure.identity/1.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.identity.1.3.0.nupkg.sha512",
+        "azure.identity.nuspec",
+        "lib/netstandard2.0/Azure.Identity.dll",
+        "lib/netstandard2.0/Azure.Identity.xml",
+        "pkgicon.png"
       ]
     },
     "Elmah.Io.AspNetCore/4.1.37": {
@@ -3678,6 +3878,30 @@
         "microsoft.aspnetcore.webutilities.nuspec"
       ]
     },
+    "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
+      "sha512": "K63Y4hORbBcKLWH5wnKgzyn7TOfYzevIEwIedQHBIkmkEBA9SCqgvom+XTuE+fAFGvINGkhFItaZ2dvMGdT5iw==",
+      "type": "package",
+      "path": "microsoft.bcl.asyncinterfaces/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
+        "microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.nuspec",
+        "ref/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "Microsoft.CSharp/4.7.0": {
       "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
@@ -3747,27 +3971,27 @@
         "version.txt"
       ]
     },
-    "Microsoft.Data.SqlClient/2.1.4": {
-      "sha512": "cDcKBTKILdRuAzJjbgXwGcUQXzMue+SG02kD4tZTXXfoz4ALrGLpCnA5k9khw3fnAMlMnRzLIGuvRdJurqmESA==",
+    "Microsoft.Data.SqlClient/3.0.1": {
+      "sha512": "5Jgcds8yukUeOHvc8S0rGW87rs2uYEM9/YyrYIb/0C+vqzIa2GiqbVPCDVcnApWhs67OSXLTM7lO6jro24v/rA==",
       "type": "package",
-      "path": "microsoft.data.sqlclient/2.1.4",
+      "path": "microsoft.data.sqlclient/3.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "dotnet.png",
-        "lib/net46/Microsoft.Data.SqlClient.dll",
-        "lib/net46/Microsoft.Data.SqlClient.pdb",
-        "lib/net46/Microsoft.Data.SqlClient.xml",
-        "lib/net46/de/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net46/es/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net46/fr/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net46/it/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net46/ja/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net46/ko/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net46/pt-BR/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net46/ru/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net46/zh-Hans/Microsoft.Data.SqlClient.resources.dll",
-        "lib/net46/zh-Hant/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net461/Microsoft.Data.SqlClient.dll",
+        "lib/net461/Microsoft.Data.SqlClient.pdb",
+        "lib/net461/Microsoft.Data.SqlClient.xml",
+        "lib/net461/de/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net461/es/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net461/fr/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net461/it/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net461/ja/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net461/ko/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net461/pt-BR/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net461/ru/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net461/zh-Hans/Microsoft.Data.SqlClient.resources.dll",
+        "lib/net461/zh-Hant/Microsoft.Data.SqlClient.resources.dll",
         "lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll",
         "lib/netcoreapp2.1/Microsoft.Data.SqlClient.pdb",
         "lib/netcoreapp2.1/Microsoft.Data.SqlClient.xml",
@@ -3780,11 +4004,11 @@
         "lib/netstandard2.1/Microsoft.Data.SqlClient.dll",
         "lib/netstandard2.1/Microsoft.Data.SqlClient.pdb",
         "lib/netstandard2.1/Microsoft.Data.SqlClient.xml",
-        "microsoft.data.sqlclient.2.1.4.nupkg.sha512",
+        "microsoft.data.sqlclient.3.0.1.nupkg.sha512",
         "microsoft.data.sqlclient.nuspec",
-        "ref/net46/Microsoft.Data.SqlClient.dll",
-        "ref/net46/Microsoft.Data.SqlClient.pdb",
-        "ref/net46/Microsoft.Data.SqlClient.xml",
+        "ref/net461/Microsoft.Data.SqlClient.dll",
+        "ref/net461/Microsoft.Data.SqlClient.pdb",
+        "ref/net461/Microsoft.Data.SqlClient.xml",
         "ref/netcoreapp2.1/Microsoft.Data.SqlClient.dll",
         "ref/netcoreapp2.1/Microsoft.Data.SqlClient.pdb",
         "ref/netcoreapp2.1/Microsoft.Data.SqlClient.xml",
@@ -3805,8 +4029,8 @@
         "runtimes/unix/lib/netstandard2.0/Microsoft.Data.SqlClient.pdb",
         "runtimes/unix/lib/netstandard2.1/Microsoft.Data.SqlClient.dll",
         "runtimes/unix/lib/netstandard2.1/Microsoft.Data.SqlClient.pdb",
-        "runtimes/win/lib/net46/Microsoft.Data.SqlClient.dll",
-        "runtimes/win/lib/net46/Microsoft.Data.SqlClient.pdb",
+        "runtimes/win/lib/net461/Microsoft.Data.SqlClient.dll",
+        "runtimes/win/lib/net461/Microsoft.Data.SqlClient.pdb",
         "runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll",
         "runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.pdb",
         "runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll",
@@ -3817,16 +4041,16 @@
         "runtimes/win/lib/netstandard2.1/Microsoft.Data.SqlClient.pdb"
       ]
     },
-    "Microsoft.Data.SqlClient.SNI.runtime/2.1.1": {
-      "sha512": "JwGDWkyZgm7SATJmFLfT2G4teimvNbNtq3lsS9a5DzvhEZnQrZjZhevCU0vdx8MjheLHoG5vocuO03QtioFQxQ==",
+    "Microsoft.Data.SqlClient.SNI.runtime/3.0.0": {
+      "sha512": "n1sNyjJgu2pYWKgw3ZPikw3NiRvG4kt7Ya5MK8u77Rgj/1bTFqO/eDF4k5W9H5GXplMZCpKkNbp5kNBICgSB0w==",
       "type": "package",
-      "path": "microsoft.data.sqlclient.sni.runtime/2.1.1",
+      "path": "microsoft.data.sqlclient.sni.runtime/3.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "dotnet.png",
-        "microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
+        "microsoft.data.sqlclient.sni.runtime.3.0.0.nupkg.sha512",
         "microsoft.data.sqlclient.sni.runtime.nuspec",
         "runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll",
         "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll",
@@ -3905,6 +4129,20 @@
         "lib/net6.0/Microsoft.EntityFrameworkCore.Design.xml",
         "microsoft.entityframeworkcore.design.6.0.3.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/6.0.0": {
+      "sha512": "WJmphvCn0wue9AX+Wvqj3XZ3ehNi9oyYBFNLtHVNvKqZrcimXBOqLo5RNf1fJWYSLWhOia/vzG4JtkAeZxZ8FQ==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.6.0.0.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/6.0.3": {
@@ -4511,10 +4749,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Identity.Client/4.21.1": {
-      "sha512": "vycgk7S/HAbHaUaK4Tid1fsWHsXdFRRP2KavAIOHCVV27zvuQfYAjXmMvctuuF4egydSumG58CwPZob3gWeYgQ==",
+    "Microsoft.Identity.Client/4.22.0": {
+      "sha512": "GlamU9rs8cSVIx9WSGv5QKpt66KkE+ImxNa/wNZZUJ3knt3PM98T9sOY8B7NcEfhw7NoxU2/0TSOcmnRSJQgqw==",
       "type": "package",
-      "path": "microsoft.identity.client/4.21.1",
+      "path": "microsoft.identity.client/4.22.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4537,7 +4775,7 @@
         "lib/xamarinios10/Microsoft.Identity.Client.xml",
         "lib/xamarinmac20/Microsoft.Identity.Client.dll",
         "lib/xamarinmac20/Microsoft.Identity.Client.xml",
-        "microsoft.identity.client.4.21.1.nupkg.sha512",
+        "microsoft.identity.client.4.22.0.nupkg.sha512",
         "microsoft.identity.client.nuspec",
         "ref/MonoAndroid10.0/Microsoft.Identity.Client.dll",
         "ref/MonoAndroid10.0/Microsoft.Identity.Client.xml",
@@ -4557,6 +4795,23 @@
         "ref/uap10.0/Microsoft.Identity.Client.xml",
         "ref/xamarinmac20/Microsoft.Identity.Client.dll",
         "ref/xamarinmac20/Microsoft.Identity.Client.xml"
+      ]
+    },
+    "Microsoft.Identity.Client.Extensions.Msal/2.16.5": {
+      "sha512": "VlGUZEpF8KP/GCfFI59sdE0WA0o9quqwM1YQY0dSp6jpGy5EOBkureaybLfpwCuYUUjQbLkN2p7neUIcQCfbzA==",
+      "type": "package",
+      "path": "microsoft.identity.client.extensions.msal/2.16.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.Identity.Client.Extensions.Msal.dll",
+        "lib/net45/Microsoft.Identity.Client.Extensions.Msal.xml",
+        "lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.dll",
+        "lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.xml",
+        "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.dll",
+        "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.xml",
+        "microsoft.identity.client.extensions.msal.2.16.5.nupkg.sha512",
+        "microsoft.identity.client.extensions.msal.nuspec"
       ]
     },
     "Microsoft.IdentityModel.JsonWebTokens/6.10.0": {
@@ -6609,6 +6864,53 @@
         "system.net.primitives.nuspec"
       ]
     },
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Reflection/4.3.0": {
       "sha512": "KMiAFoW7MfJGa9nDFNcfu+FpEdiHpWgTcS2HdMpDvt9saK3y/G4GwprPyzqjFH9NTaGPQeWNHU+iDlDILj96aQ==",
       "type": "package",
@@ -8115,6 +8417,41 @@
         "system.threading.tasks.nuspec"
       ]
     },
+    "System.Threading.Tasks.Extensions/4.5.2": {
+      "sha512": "BG/TNxDFv0svAzx8OiMXDlsHfGw623BZ8tCXw4YLhDFDvDhNUEV58jKYMGRnkbJNm7c3JNNJDiN7JBMzxRBR2w==",
+      "type": "package",
+      "path": "system.threading.tasks.extensions/4.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.tasks.extensions.4.5.2.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Windows.Extensions/4.7.0": {
       "sha512": "CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "type": "package",
@@ -8175,9 +8512,11 @@
     "net6.0": [
       "Asp.Versioning.Mvc >= 6.4.1",
       "Asp.Versioning.Mvc.ApiExplorer >= 6.4.0",
+      "AspNetCore.HealthChecks.SqlServer >= 6.0.2",
       "AspNetCore.HealthChecks.UI >= 6.0.4",
       "AspNetCore.HealthChecks.UI.Client >= 6.0.4",
       "AspNetCore.HealthChecks.UI.Client.Net6 >= 1.0.1",
+      "AspNetCore.HealthChecks.UI.InMemory.Storage >= 6.0.3",
       "AspNetCore.HealthChecks.UI.SqlServer.Storage >= 6.0.4",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "DevIO.Business >= 1.0.0",
@@ -8262,6 +8601,10 @@
             "target": "Package",
             "version": "[6.4.0, )"
           },
+          "AspNetCore.HealthChecks.SqlServer": {
+            "target": "Package",
+            "version": "[6.0.2, )"
+          },
           "AspNetCore.HealthChecks.UI": {
             "target": "Package",
             "version": "[6.0.4, )"
@@ -8273,6 +8616,10 @@
           "AspNetCore.HealthChecks.UI.Client.Net6": {
             "target": "Package",
             "version": "[1.0.1, )"
+          },
+          "AspNetCore.HealthChecks.UI.InMemory.Storage": {
+            "target": "Package",
+            "version": "[6.0.3, )"
           },
           "AspNetCore.HealthChecks.UI.SqlServer.Storage": {
             "target": "Package",

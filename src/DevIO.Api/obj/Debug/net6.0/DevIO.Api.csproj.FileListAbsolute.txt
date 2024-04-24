@@ -132,3 +132,10 @@ C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\De
 C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\HealthChecks.SqlServer.dll
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\HealthChecks.UI.InMemory.Storage.dll
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Usuario\Documents\REST com ASP_NET Core WEBAPI\6.0\src\DevIO.Api\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll

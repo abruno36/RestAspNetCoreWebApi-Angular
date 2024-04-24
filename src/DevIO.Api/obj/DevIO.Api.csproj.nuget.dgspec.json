@@ -62,6 +62,10 @@
               "target": "Package",
               "version": "[6.4.0, )"
             },
+            "AspNetCore.HealthChecks.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "AspNetCore.HealthChecks.UI": {
               "target": "Package",
               "version": "[6.0.4, )"
@@ -73,6 +77,10 @@
             "AspNetCore.HealthChecks.UI.Client.Net6": {
               "target": "Package",
               "version": "[1.0.1, )"
+            },
+            "AspNetCore.HealthChecks.UI.InMemory.Storage": {
+              "target": "Package",
+              "version": "[6.0.3, )"
             },
             "AspNetCore.HealthChecks.UI.SqlServer.Storage": {
               "target": "Package",

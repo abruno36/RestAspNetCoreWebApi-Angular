@@ -14,8 +14,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="6.0.2" />
 		<PackageReference Include="AspNetCore.HealthChecks.UI" Version="6.0.4" />
 		<PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="6.0.4" />
+		<PackageReference Include="AspNetCore.HealthChecks.UI.InMemory.Storage" Version="6.0.3" />
 		<PackageReference Include="AspNetCore.HealthChecks.UI.SqlServer.Storage" Version="6.0.4" />
 		<PackageReference Include="Asp.Versioning.Mvc" Version="6.4.1" />
 		<PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="6.4.0" />
